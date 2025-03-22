@@ -124,6 +124,31 @@ CREATE TABLE CareerTalents (
 );
 
 
+CREATE TABLE Gods (
+    ID INT PRIMARY KEY AUTO_INCREMENT,
+    Name VARCHAR(255) NOT NULL
+);
+
+
+CREATE TABLE LoreMagic (
+    ID INT PRIMARY KEY AUTO_INCREMENT,
+    Name VARCHAR(255) NOT NULL
+);
+
+
+CREATE TABLE Conditions (
+    ID INT PRIMARY KEY AUTO_INCREMENT,
+    Name VARCHAR(255) NOT NULL
+);
+
+
+CREATE TABLE WeaponCategory (
+    ID INT PRIMARY KEY AUTO_INCREMENT,
+    Name VARCHAR(255) NOT NULL,
+    IsMelee BOOLEAN NOT NULL
+);
+
+
 INSERT INTO Species (Name, InitialPercentage, MaxPercentage) VALUES ('Human', 1, 88);
 INSERT INTO Species (Name, InitialPercentage, MaxPercentage) VALUES ('Halfling', 89, 92);
 INSERT INTO Species (Name, InitialPercentage, MaxPercentage) VALUES ('Dwarf', 93, 96);
@@ -810,3 +835,68 @@ INSERT INTO Talents (Name) VALUES ('Waterman'); -- 164
 INSERT INTO Talents (Name) VALUES ('Wealthy'); -- 165
 INSERT INTO Talents (Name) VALUES ('Well-prepared'); -- 166
 INSERT INTO Talents (Name) VALUES ('Witch!'); -- 167
+
+
+-- Gods
+INSERT INTO Gods (Name) VALUES ('Manann'); -- 1
+INSERT INTO Gods (Name) VALUES ('Morr'); -- 2
+INSERT INTO Gods (Name) VALUES ('Myrmidia'); -- 3
+INSERT INTO Gods (Name) VALUES ('Ranald'); -- 4
+INSERT INTO Gods (Name) VALUES ('Rhya'); -- 5
+INSERT INTO Gods (Name) VALUES ('Shallya'); -- 6
+INSERT INTO Gods (Name) VALUES ('Sigmar'); -- 7
+INSERT INTO Gods (Name) VALUES ('Taal'); -- 8
+INSERT INTO Gods (Name) VALUES ('Ulric'); -- 9
+INSERT INTO Gods (Name) VALUES ('Verena'); -- 10
+-- New God
+INSERT INTO Gods (Name) VALUES ('Stromfels'); -- 11
+
+
+-- LoreMagic
+INSERT INTO LoreMagic (Name) VALUES ('Beasts'); -- 1
+INSERT INTO LoreMagic (Name) VALUES ('Death'); -- 2
+INSERT INTO LoreMagic (Name) VALUES ('Fire'); -- 3
+INSERT INTO LoreMagic (Name) VALUES ('Heavens'); -- 4
+INSERT INTO LoreMagic (Name) VALUES ('Metal'); -- 5
+INSERT INTO LoreMagic (Name) VALUES ('Life'); -- 6
+INSERT INTO LoreMagic (Name) VALUES ('Light'); -- 7
+INSERT INTO LoreMagic (Name) VALUES ('Shadow'); -- 8
+INSERT INTO LoreMagic (Name) VALUES ('Hedgecraft'); -- 9
+INSERT INTO LoreMagic (Name) VALUES ('Witchcraft'); -- 10
+INSERT INTO LoreMagic (Name) VALUES ('Necromancy'); -- 11
+INSERT INTO LoreMagic (Name) VALUES ('Daemonology'); -- 12
+
+
+-- Conditions
+INSERT INTO Conditions (Name) VALUES ('Ablaze'); -- 1
+INSERT INTO Conditions (Name) VALUES ('Bleeding'); -- 2
+INSERT INTO Conditions (Name) VALUES ('Blinded'); -- 3
+INSERT INTO Conditions (Name) VALUES ('Broken'); -- 4
+INSERT INTO Conditions (Name) VALUES ('Deafened'); -- 5
+INSERT INTO Conditions (Name) VALUES ('Entangled'); -- 6
+INSERT INTO Conditions (Name) VALUES ('Fatigued'); -- 7
+INSERT INTO Conditions (Name) VALUES ('Poisoned'); -- 8
+INSERT INTO Conditions (Name) VALUES ('Prone'); -- 9
+INSERT INTO Conditions (Name) VALUES ('Stunned'); -- 10
+INSERT INTO Conditions (Name) VALUES ('Surprised'); -- 11
+INSERT INTO Conditions (Name) VALUES ('Unconscious'); -- 12
+
+
+-- WeaponCategory
+INSERT INTO WeaponCategory (Name) VALUES ('Basic', TRUE); -- 1
+INSERT INTO WeaponCategory (Name) VALUES ('Cavalry', TRUE); -- 2
+INSERT INTO WeaponCategory (Name) VALUES ('Fencing', TRUE); -- 3
+INSERT INTO WeaponCategory (Name) VALUES ('Brawling', TRUE); -- 4
+INSERT INTO WeaponCategory (Name) VALUES ('Flail', TRUE); -- 5
+INSERT INTO WeaponCategory (Name) VALUES ('Parry', TRUE); -- 6
+INSERT INTO WeaponCategory (Name) VALUES ('Polearm', TRUE); -- 7
+INSERT INTO WeaponCategory (Name) VALUES ('Two-Handed', TRUE); -- 8
+-- Ranged
+INSERT INTO WeaponCategory (Name) VALUES ('Blackpowder', FALSE); -- 9
+INSERT INTO WeaponCategory (Name) VALUES ('Bow', FALSE); -- 10
+INSERT INTO WeaponCategory (Name) VALUES ('Crossbow', FALSE); -- 11
+INSERT INTO WeaponCategory (Name) VALUES ('Engineering', FALSE); -- 12
+INSERT INTO WeaponCategory (Name) VALUES ('Entangling', FALSE); -- 13
+INSERT INTO WeaponCategory (Name) VALUES ('Explosives', FALSE); -- 14
+INSERT INTO WeaponCategory (Name) VALUES ('Sling', FALSE); -- 15
+INSERT INTO WeaponCategory (Name) VALUES ('Throwing', FALSE); -- 16
