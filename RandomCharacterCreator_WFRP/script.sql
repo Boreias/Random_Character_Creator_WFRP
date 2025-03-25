@@ -41,19 +41,44 @@ CREATE TABLE SpeciesCareer (
 );
 
 
+CREATE TABLE GroupTypes (
+    ID INT PRIMARY KEY AUTO_INCREMENT,
+    Name VARCHAR(255) NOT NULL
+);
+
+
+CREATE TABLE GroupElements (
+    ID INT PRIMARY KEY AUTO_INCREMENT,
+    Name VARCHAR(255) NOT NULL,
+    GroupTypesID INT NOT NULL,
+    FOREIGN KEY (GroupTypesID) REFERENCES GroupTypes(ID)
+);
+
+
 CREATE TABLE Skills (
     ID INT PRIMARY KEY AUTO_INCREMENT,
     Name VARCHAR(255) NOT NULL,
     IsBasic BOOLEAN NOT NULL,
-    IsGrouped BOOLEAN NOT NULL,
+    -- IsGrouped BOOLEAN NOT NULL,
+    GroupTypesID INT,
     AttributeID INT NOT NULL,
+    FOREIGN KEY (GroupTypesID) REFERENCES GroupTypes(ID)
     FOREIGN KEY (AttributeID) REFERENCES Attributes(ID)
+);
+
+
+CREATE TABLE SkillsGroupTypes (
+    ID INT PRIMARY KEY AUTO_INCREMENT,
+    SkillID INT NOT NULL,
+    GroupTypesID INT NOT NULL,
+    FOREIGN KEY (SkillID) REFERENCES Skills(ID),
+    FOREIGN KEY (GroupTypesID) REFERENCES GroupTypes(ID)
 );
 
 
 CREATE TABLE SpeciesSkills (
     ID INT PRIMARY KEY AUTO_INCREMENT,
-    Group VARCHAR(255),
+    -- Group VARCHAR(255),
     SpeciesID INT NOT NULL,
     SkillID INT NOT NULL,
     FOREIGN KEY (SpeciesID) REFERENCES Species(ID),
@@ -146,6 +171,30 @@ CREATE TABLE WeaponCategory (
     ID INT PRIMARY KEY AUTO_INCREMENT,
     Name VARCHAR(255) NOT NULL,
     IsMelee BOOLEAN NOT NULL
+);
+
+
+CREATE TABLE Symptoms (
+    ID INT PRIMARY KEY AUTO_INCREMENT,
+    Name VARCHAR(255) NOT NULL
+);
+
+
+CREATE TABLE Diseases (
+    ID INT PRIMARY KEY AUTO_INCREMENT,
+    Name VARCHAR(255) NOT NULL,
+    Contraction VARCHAR(255) NOT NULL,
+    Incubation VARCHAR(255) NOT NULL,
+    Duration VARCHAR(255) NOT NULL,
+);
+
+
+CREATE TABLE DiseaseSymptoms (
+    ID INT PRIMARY KEY AUTO_INCREMENT,
+    DiseaseID INT NOT NULL,
+    SymptomID INT NOT NULL,
+    FOREIGN KEY (DiseaseID) REFERENCES Diseases(ID),
+    FOREIGN KEY (SymptomID) REFERENCES Symptoms(ID)
 );
 
 
@@ -900,3 +949,31 @@ INSERT INTO WeaponCategory (Name) VALUES ('Entangling', FALSE); -- 13
 INSERT INTO WeaponCategory (Name) VALUES ('Explosives', FALSE); -- 14
 INSERT INTO WeaponCategory (Name) VALUES ('Sling', FALSE); -- 15
 INSERT INTO WeaponCategory (Name) VALUES ('Throwing', FALSE); -- 16
+
+
+
+-- Symptoms
+INSERT INTO Symptoms (Name) VALUES ('Blight'); -- 1
+INSERT INTO Symptoms (Name) VALUES ('Buboes'); -- 2
+INSERT INTO Symptoms (Name) VALUES ('Convulsions'); -- 3
+INSERT INTO Symptoms (Name) VALUES ('Coyghs and Sneezes'); -- 4
+INSERT INTO Symptoms (Name) VALUES ('Fever'); -- 5
+INSERT INTO Symptoms (Name) VALUES ('Flux'); -- 6
+INSERT INTO Symptoms (Name) VALUES ('Gangrene'); -- 7
+INSERT INTO Symptoms (Name) VALUES ('Lingering'); -- 8
+INSERT INTO Symptoms (Name) VALUES ('Malaise'); -- 9
+INSERT INTO Symptoms (Name) VALUES ('Nausea'); -- 10
+INSERT INTO Symptoms (Name) VALUES ('Pox'); -- 11
+INSERT INTO Symptoms (Name) VALUES ('Wounded'); -- 12
+
+
+-- Diseases
+INSERT INTO Diseases (Name, Contraction, Incubation, Duration) VALUES ('The Black Plague', '', '1d10 minutes', '3d10 days') -- 1
+INSERT INTO Diseases (Name, Contraction, Incubation, Duration) VALUES ('Blood Rot', '', 'Instant', '1d10 days') -- 2
+INSERT INTO Diseases (Name, Contraction, Incubation, Duration) VALUES ('The Bloody Flux', '', '2d10 days', '1d10 days') -- 3
+INSERT INTO Diseases (Name, Contraction, Incubation, Duration) VALUES ('Festering Wound', '', '1d10 days', '1d10 days') -- 4
+INSERT INTO Diseases (Name, Contraction, Incubation, Duration) VALUES ('Galloping Trots', '', '1d10 hours', '1d10 days') -- 5
+INSERT INTO Diseases (Name, Contraction, Incubation, Duration) VALUES ('Itching Pox', '', '1d10 days', '1d10+7 days') -- 6
+INSERT INTO Diseases (Name, Contraction, Incubation, Duration) VALUES ('Minor Infection', '', '1d10 days', '1d10 days') -- 7
+INSERT INTO Diseases (Name, Contraction, Incubation, Duration) VALUES ("Packer's Pox", '', '1d10 days', '5d10 days') -- 8
+INSERT INTO Diseases (Name, Contraction, Incubation, Duration) VALUES ('Ratte Fever', '', '3d10+5 days', '3d10+10 days') -- 9
