@@ -41,44 +41,26 @@ CREATE TABLE SpeciesCareer (
 );
 
 
-CREATE TABLE GroupTypes (
-    ID INT PRIMARY KEY AUTO_INCREMENT,
-    Name VARCHAR(255) NOT NULL
-);
-
-
-CREATE TABLE GroupElements (
-    ID INT PRIMARY KEY AUTO_INCREMENT,
-    Name VARCHAR(255) NOT NULL,
-    GroupTypesID INT NOT NULL,
-    FOREIGN KEY (GroupTypesID) REFERENCES GroupTypes(ID)
-);
-
-
 CREATE TABLE Skills (
     ID INT PRIMARY KEY AUTO_INCREMENT,
     Name VARCHAR(255) NOT NULL,
     IsBasic BOOLEAN NOT NULL,
-    -- IsGrouped BOOLEAN NOT NULL,
-    GroupTypesID INT,
     AttributeID INT NOT NULL,
-    FOREIGN KEY (GroupTypesID) REFERENCES GroupTypes(ID)
     FOREIGN KEY (AttributeID) REFERENCES Attributes(ID)
 );
 
 
-CREATE TABLE SkillsGroupTypes (
+CREATE TABLE GroupSkill (
     ID INT PRIMARY KEY AUTO_INCREMENT,
+    Name VARCHAR(255) NOT NULL,
     SkillID INT NOT NULL,
-    GroupTypesID INT NOT NULL,
-    FOREIGN KEY (SkillID) REFERENCES Skills(ID),
-    FOREIGN KEY (GroupTypesID) REFERENCES GroupTypes(ID)
+    FOREIGN KEY (SkillID) REFERENCES Skills(ID)
 );
 
 
 CREATE TABLE SpeciesSkills (
     ID INT PRIMARY KEY AUTO_INCREMENT,
-    -- Group VARCHAR(255),
+    SkillGroup VARCHAR(255),
     SpeciesID INT NOT NULL,
     SkillID INT NOT NULL,
     FOREIGN KEY (SpeciesID) REFERENCES Species(ID),
@@ -88,8 +70,10 @@ CREATE TABLE SpeciesSkills (
 
 CREATE TABLE CareerSkills (
     ID INT PRIMARY KEY AUTO_INCREMENT,
+    CareerLevel INT NOT NULL,
     CareerID INT NOT NULL,
     SkillID INT NOT NULL,
+    SkillGroup VARCHAR(255),
     FOREIGN KEY (CareerID) REFERENCES Career(ID),
     FOREIGN KEY (SkillID) REFERENCES Skills(ID)
 );
@@ -106,15 +90,6 @@ CREATE TABLE SpeciesTalents (
     SpeciesID INT NOT NULL,
     TalentID INT NOT NULL,
     FOREIGN KEY (SpeciesID) REFERENCES Species(ID),
-    FOREIGN KEY (TalentID) REFERENCES Talents(ID)
-);
-
-
-CREATE TABLE CareerTalents (
-    ID INT PRIMARY KEY AUTO_INCREMENT,
-    CareerID INT NOT NULL,
-    TalentID INT NOT NULL,
-    FOREIGN KEY (CareerID) REFERENCES Career(ID),
     FOREIGN KEY (TalentID) REFERENCES Talents(ID)
 );
 
@@ -716,6 +691,161 @@ INSERT INTO Skills (Name, IsBasic, IsGrouped, AttributeID) VALUES ('Track', FALS
 INSERT INTO Skills (Name, IsBasic, IsGrouped, AttributeID) VALUES ('Trade', FALSE, TRUE, 7); -- 45
 
 
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Cartography', 3);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Engraving', 3);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Mosaics', 3);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Painting', 3);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Sculpture', 3);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Tattoo', 3);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Weaving', 3);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Writing', 3);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Calligraphy', 3);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Aqshy', 6);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Azyr', 6);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Chamon', 6);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Dhar', 6);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Ghur', 6);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Ghyran', 6);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Hysh', 6);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Shyish', 6);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Ulgu', 6);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Acting', 15);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Comedy', 15);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Singing', 15);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Storytelling', 15);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Speeches', 15);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Lecture', 15);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Rhetoric', 15);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Fortune Telling', 15);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Prophecy', 15);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Taunt', 15);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Battle Tongue', 23);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Bretonnian', 23);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Classical', 23);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Guilder', 23);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Khazalid', 23);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Magick', 23);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Tilean', 23);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Elthárin', 23);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Estalian', 23);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Gospodarinyi', 23);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Kislevarin', 23);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Kislevite', 23);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Grumbarth', 23);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Art', 25);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Engineering', 25);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Geology', 25);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Heraldry', 25);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('History', 25);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Law', 25);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Magick', 25);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Metallurgy', 25);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Science', 25);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Theology', 25);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Chemistry', 25);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Geography', 25);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Folklore', 25);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Medicine', 25);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Politics', 25);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Warfare', 25);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Genealogy', 25);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Herbs', 25);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Spirits', 25);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Astrology', 25);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Prophecy', 25);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Riverways', 25);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Anatomy', 25);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Torture', 25);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Witches', 25);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Basic', 26);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Brawling', 26);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Cavalry', 26);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Fencing', 26);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Flail', 26);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Parry', 26);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Pole-Arm', 26);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Two-Handed', 26);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Fist', 26);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Acrobatics', 30);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Clowning', 30);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Dancing', 30);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Firebreathing', 30);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Juggling', 30);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Miming', 30);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Rope Walking', 30);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Fight', 30);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Bagpipe', 32);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Lute', 32);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Harpsichord', 32);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Horn', 32);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Violin', 32);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Blackpowder', 34);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Bow', 34);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Crossbow', 34);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Engineering', 34);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Entangling', 34);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Explosives', 34);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Sling', 34);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Throwing', 34);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Demigryph', 36);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Great Wolf', 36);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Griffon', 36);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Horse', 36);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Pegasus', 36);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Barge', 38);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Caravel', 38);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Cog', 38);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Frigate', 38);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Wolfship', 38);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Grey Order', 39);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Guild (any one)', 39);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Ranger', 39);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Scout', 39);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Thief', 39);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Vagabond', 39);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Guilder', 39);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Forbidden Cults', 39);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Rural', 42);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Underground', 42);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Urban', 42);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Apothecary', 45);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Calligrapher', 45);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Chandler', 45);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Carpenter', 45);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Cook', 45);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Embalmer', 45);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Smith', 45);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Tanner', 45);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Engineering', 45);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Explosives', 45);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Blacksmith', 45);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Poisoner', 45);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Brewer', 45);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Vintner', 45);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Barber', 45);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Writing', 45);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Printing', 45);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Gunsmith', 45);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Charms', 45);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Cartographer', 45);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Boatbuilding', 45);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Engraver', 45);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Farrier', 45);
+INSERT INTO GroupSkills (Name, SkillID) VALUES ('Farmer', 45);
+
+
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 1, 10);
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 1, 20);
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 1, 23, 'Classical');
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 1, 25, 'Chemistry');
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 1, 25, 'Medicine');
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 1, 25, 'Plants');
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 1, 45, 'Apothecary');
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 1, 45, 'Poisoner');
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 1, 7);
+-- Continuar com as skills de cada carreira
+
+
 -- Talents
 INSERT INTO Talents (Name) VALUES ('Accurate Shot'); -- 1
 INSERT INTO Talents (Name) VALUES ('Acute Sense (Any)'); -- 2
@@ -949,7 +1079,6 @@ INSERT INTO WeaponCategory (Name) VALUES ('Entangling', FALSE); -- 13
 INSERT INTO WeaponCategory (Name) VALUES ('Explosives', FALSE); -- 14
 INSERT INTO WeaponCategory (Name) VALUES ('Sling', FALSE); -- 15
 INSERT INTO WeaponCategory (Name) VALUES ('Throwing', FALSE); -- 16
-
 
 
 -- Symptoms
