@@ -552,6 +552,7 @@ INSERT INTO SpeciesCareer (InitialPercentage, MaxPercentage, SpeciesID, CareerID
 INSERT INTO SpeciesCareer (InitialPercentage, MaxPercentage, SpeciesID, CareerID) VALUES (97, 100, 7, 62);
 
 
+-- Attributes
 INSERT INTO Attributes (Name) VALUES ('WS'); -- 1
 INSERT INTO Attributes (Name) VALUES ('BS'); -- 2
 INSERT INTO Attributes (Name) VALUES ('S'); -- 3
