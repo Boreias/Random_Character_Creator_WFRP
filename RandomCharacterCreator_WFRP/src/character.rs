@@ -47,6 +47,7 @@ impl Character {
 
         let species_id = species.id;
 
+        // Get species attributes
         for row in client.query(
             "SELECT Attributes.Name as attribute, SpeciesAttributes.AdditionalAdjustment as value
                     FROM SpeciesAttributes
@@ -71,16 +72,56 @@ impl Character {
         }
     }
 
-    pub fn take_test(&mut self, skill: String, dificulty: u8) -> bool {
+    fn prepare_take_test(&mut self, skill: String) -> (String, bool) {
+        let mut client = Client::connect("host=localhost user=postgres dbname=wfrp", NoTls).unwrap();
+
+        let skill_db = client.query_one(
+            "SELECT Skills.IsBasic as is_basic, Attributes.Name as attribute_name
+                    FROM Skills
+                    INNER JOIN Attributes ON Skills.AttributeID=Attributes.ID
+                    WHERE Skills.Name = $1",
+            &[&skill]).unwrap();
+
+        let is_basic = skill_db.get("is_basic");
+        let attribute_name: String = skill_db.get("attribute_name");
+
+        (attribute_name, is_basic)
+    }
+
+    pub fn take_simple_test(&mut self, skill: String, dificulty: u8) -> bool {
         let roll = rand::thread_rng().gen_range(1, 101);
+
+        let (attribute_name, is_basic) = self.prepare_take_test(skill.clone());
 
         match self.skills.get(&skill) {
             Some(&skill_value) => {
-                return skill_value + dificulty >= roll;
+                return (self.attributes.get(&attribute_name).unwrap() +  skill_value + dificulty) >= roll;
             }
             None => {
+                if is_basic {
+                    return (self.attributes.get(&attribute_name).unwrap() +  dificulty) >= roll;
+                }
                 println!("Skill not found: {}", skill);
                 return false;
+            }
+        }
+    }
+
+    pub fn take_test(&mut self, skill: String, dificulty: u8) -> i32 {
+        let roll = rand::thread_rng().gen_range(1, 101);
+
+        let (attribute_name, is_basic) = self.prepare_take_test(skill.clone());
+
+        match self.skills.get(&skill) {
+            Some(&skill_value) => {
+                return (((self.attributes.get(&attribute_name).unwrap() + skill_value + dificulty) / 10) - (roll / 10)) as i32;
+            }
+            None => {
+                if is_basic {
+                    return ((self.attributes.get(&attribute_name).unwrap() + dificulty) / 10 - (roll / 10)) as i32;
+                }
+                println!("Skill not found: {}", skill);
+                return -10;
             }
         }
     }
