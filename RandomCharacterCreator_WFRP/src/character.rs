@@ -37,7 +37,7 @@ pub struct Character {
 }
 
 impl Character {
-    pub fn new(species: Species, career: Career, career_level: u8) -> Self {
+    pub fn new(species: Species, career: Career, career_level: u8, experience: u32) -> Self {
         let mut client = Client::connect("host=localhost user=postgres dbname=wfrp", NoTls).unwrap();
 
         let mut attributes = HashMap::new();
@@ -60,6 +60,14 @@ impl Character {
                 attribute_name,
                 rand::thread_rng().gen_range(1, 11) + rand::thread_rng().gen_range(1, 11) + attribute_value as u8);
         }
+// Each Species has a variety of Skills and Talents to choose from.
+// You may choose 3 Skills to gain 5 Advances each, and 3 Skills
+// to gain 3 Advances each. If a Talent listing presents a choice, you
+// select one Talent from the choices given. Any Random Talents are
+// determined by the Random Talent table. If you roll a Talent you
+// already have, you may reroll. Note: All Characters are assumed to
+// be fluent in Reikspiel,, the language of the Empire, and do not
+// need to take it as a Skill. For more on this, see page 124.
 
         Character {
             species: species.name.to_string(),

@@ -13,6 +13,7 @@ fn main() {
     let species: Species;
     let career: Career;
     let career_level: u8;
+    let experience: u32;
 
     if args.len() > 1 { // Espécie
         let species_argument = &args[1];
@@ -54,5 +55,11 @@ fn main() {
         career_level = 1;
     }
 
-    let character = Character::new(species, career, career_level);
+    if args.len() > 4 { // Pontos de Experiência
+        experience = args[4].parse().unwrap();
+    } else {
+        experience = 70;
+    }
+
+    let character = Character::new(species, career, career_level, experience);
 }

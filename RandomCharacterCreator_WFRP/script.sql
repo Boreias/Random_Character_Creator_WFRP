@@ -173,13 +173,13 @@ CREATE TABLE DiseaseSymptoms (
 );
 
 
-INSERT INTO Species (Name, InitialPercentage, MaxPercentage) VALUES ('Human', 1, 88);
-INSERT INTO Species (Name, InitialPercentage, MaxPercentage) VALUES ('Halfling', 89, 92);
-INSERT INTO Species (Name, InitialPercentage, MaxPercentage) VALUES ('Dwarf', 93, 96);
-INSERT INTO Species (Name, InitialPercentage, MaxPercentage) VALUES ('Ogre', 97, 97);
-INSERT INTO Species (Name, InitialPercentage, MaxPercentage) VALUES ('Gnome', 98, 98);
-INSERT INTO Species (Name, InitialPercentage, MaxPercentage) VALUES ('High Elf', 99, 99);
-INSERT INTO Species (Name, InitialPercentage, MaxPercentage) VALUES ('Wood Elf', 100, 100);
+INSERT INTO Species (Name, InitialPercentage, MaxPercentage) VALUES ('Human', 1, 88); -- 1
+INSERT INTO Species (Name, InitialPercentage, MaxPercentage) VALUES ('Halfling', 89, 92); -- 2
+INSERT INTO Species (Name, InitialPercentage, MaxPercentage) VALUES ('Dwarf', 93, 96); -- 3
+INSERT INTO Species (Name, InitialPercentage, MaxPercentage) VALUES ('Ogre', 97, 97); -- 4
+INSERT INTO Species (Name, InitialPercentage, MaxPercentage) VALUES ('Gnome', 98, 98); -- 5
+INSERT INTO Species (Name, InitialPercentage, MaxPercentage) VALUES ('High Elf', 99, 99); -- 6
+INSERT INTO Species (Name, InitialPercentage, MaxPercentage) VALUES ('Wood Elf', 100, 100); -- 7
 
 
 INSERT INTO Class (Name) VALUES ('Academics');
@@ -690,6 +690,99 @@ INSERT INTO Skills (Name, IsBasic, IsGrouped, AttributeID) VALUES ('Stealth', TR
 INSERT INTO Skills (Name, IsBasic, IsGrouped, AttributeID) VALUES ('Swim', FALSE, FALSE, 3); -- 43
 INSERT INTO Skills (Name, IsBasic, IsGrouped, AttributeID) VALUES ('Track', FALSE, FALSE, 5); -- 44
 INSERT INTO Skills (Name, IsBasic, IsGrouped, AttributeID) VALUES ('Trade', FALSE, TRUE, 7); -- 45
+
+
+-- Human
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES (NULL, 1, 1); -- 1
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES (NULL, 1, 7); -- 2
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES (NULL, 1, 11); -- 3
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES (NULL, 1, 16); -- 4
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES (NULL, 1, 18); -- 5
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES (NULL, 1, 19); -- 6
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES ('Bretonnian', 1, 23); -- 7
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES ('Wastelander', 1, 23); -- 8
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES (NULL, 1, 24); -- 9
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES ('Reikland', 1, 25); -- 10
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES ('Basic', 1, 26); -- 11
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES ('Bow', 1, 34); -- 12
+-- Halflings
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES (NULL, 2, 7); -- 13
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES (NULL, 2, 10); -- 14
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES (NULL, 2, 12); -- 15
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES (NULL, 2, 17); -- 16
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES (NULL, 2, 19); -- 17
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES (NULL, 2, 22); -- 18
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES ('Mootish', 2, 23); -- 19
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES ('Reikland', 2, 25); -- 20
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES (NULL, 2, 29); -- 21
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES (NULL, 2, 41); -- 22
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES ('Any', 2, 42); -- 23
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES ('Cook', 2, 45); -- 24
+-- Dwarfs
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES (NULL, 3, 10); -- 25
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES (NULL, 3, 11); -- 26
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES (NULL, 3, 14); -- 27
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES ('Storytelling', 3, 15); -- 28
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES (NULL, 3, 16); -- 29
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES (NULL, 3, 21); -- 30
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES ('Khazalid', 3, 23); -- 31
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES ('Dwarfs', 3, 25); -- 32
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES ('Geology', 3, 25); -- 33
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES ('Metallurgy', 3, 25); -- 34
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES ('Basic', 3, 26); -- 35
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES ('Any', 3, 45); -- 36
+-- Ogres
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES (NULL, 4, 4); -- 37
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES (NULL, 4, 10); -- 38
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES (NULL, 4, 14); -- 39
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES ('Storytelling', 4, 15); -- 40
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES (NULL, 4, 21); -- 41
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES ('Grumbarth', 4, 23); -- 42
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES ('Ogres', 4, 25); -- 43
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES ('Basic', 4, 26); -- 44
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES ('Brawling', 4, 26); -- 45
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES (NULL, 4, 27); -- 46
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES (NULL, 4, 28); -- 47
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES (NULL, 4, 44); -- 48
+-- Gnomes
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES ('Ulgu', 5, 6); -- 49
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES (NULL, 5, 7); -- 50
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES (NULL, 5, 10); -- 51
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES (NULL, 5, 12); -- 52
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES ('Any', 5, 15); -- 53
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES (NULL, 5, 18); -- 54
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES (NULL, 5, 19); -- 55
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES ('Ghassally', 5, 23); -- 56
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES ('Magick', 5, 23); -- 57
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES ('Wastelander', 5, 23); -- 58
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES (NULL, 5, 28); -- 59
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES ('Any', 5, 42); -- 60
+-- High Elves
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES (NULL, 6, 11); -- 61
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES ('Sing', 6, 15); -- 62
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES (NULL, 6, 16); -- 63
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES ('Eltharin', 6, 23); -- 64
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES (NULL, 6, 24); -- 65
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES ('Basic', 6, 26); -- 66
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES (NULL, 6, 27); -- 67
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES (NULL, 6, 29); -- 68
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES ('Any', 6, 32); -- 69
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES ('Bow', 6, 34); -- 70
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES (NULL, 6, 38); -- 71
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES (NULL, 6, 43); -- 72
+-- Wood Elves
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES (NULL, 7, 4); -- 73
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES (NULL, 7, 9); -- 74
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES (NULL, 7, 14); -- 75
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES ('Sing', 7, 15); -- 76
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES (NULL, 7, 21); -- 77
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES ('Eltharin', 7, 23); -- 78
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES ('Basic', 7, 26); -- 79
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES (NULL, 7, 28); -- 80
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES (NULL, 7, 29); -- 81
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES ('Bow', 7, 34); -- 82
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES ('Rural', 7, 42); -- 83
+INSERT INTO SpeciesSkills (SkillGroup, SpeciesID, SkillID) VALUES (NULL, 7, 44); -- 84
 
 
 INSERT INTO GroupSkills (Name, SkillID) VALUES ('Cartography', 3);
