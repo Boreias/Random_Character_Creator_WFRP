@@ -1,6 +1,7 @@
 use std::collections::HashMap;
 use postgres::{Client, NoTls};
-use rand::Rng;
+use rand::seq::SliceRandom;
+use rand;
 
 
 pub struct Species {
@@ -58,16 +59,43 @@ impl Character {
             let attribute_value: i32 = row.get("value");
             attributes.insert(
                 attribute_name,
-                rand::thread_rng().gen_range(1, 11) + rand::thread_rng().gen_range(1, 11) + attribute_value as u8);
+                rand::random_range(1..11) + rand::random_range(1..11) + attribute_value as u8);
         }
-// Each Species has a variety of Skills and Talents to choose from.
-// You may choose 3 Skills to gain 5 Advances each, and 3 Skills
-// to gain 3 Advances each. If a Talent listing presents a choice, you
-// select one Talent from the choices given. Any Random Talents are
-// determined by the Random Talent table. If you roll a Talent you
-// already have, you may reroll. Note: All Characters are assumed to
-// be fluent in Reikspiel,, the language of the Empire, and do not
-// need to take it as a Skill. For more on this, see page 124.
+
+
+        // Get species skills
+        let mut species_skills_vec: Vec<String> = Vec::new();
+        for row in client.query(
+            "SELECT Skills.Name as skill
+                    FROM SpeciesSkills
+                    INNER JOIN Skills ON SpeciesSkills.SkillsID=Skills.ID
+                    WHERE SpeciesSkills.SpeciesID = $1",
+                    &[&species_id]).unwrap() {
+            let skill_name: String = row.get("skill");
+            species_skills_vec.push(skill_name);
+        }
+        species_skills_vec.shuffle(&mut rand::rng());
+        skills.insert(species_skills_vec.pop().unwrap(), 5);
+        skills.insert(species_skills_vec.pop().unwrap(), 5);
+        skills.insert(species_skills_vec.pop().unwrap(), 5);
+        skills.insert(species_skills_vec.pop().unwrap(), 3);
+        skills.insert(species_skills_vec.pop().unwrap(), 3);
+        skills.insert(species_skills_vec.pop().unwrap(), 3);
+
+        // Get species talent
+        let mut species_talents_vec: Vec<String> = Vec::new();
+        for row in client.query(
+            "SELECT Talents.Name as talent
+                    FROM SpeciesTalents
+                    INNER JOIN Talents ON SpeciesTalents.TalentsID=Talents.ID
+                    WHERE SpeciesTalents.SpeciesID = $1",
+                    &[&species_id]).unwrap() {
+            let talent_name: String = row.get("talent");
+            species_talents_vec.push(talent_name);
+        }
+        species_talents_vec.shuffle(&mut rand::rng());
+        talents.insert(species_talents_vec.pop().unwrap(), 1);
+        
 
         Character {
             species: species.name.to_string(),
@@ -97,7 +125,7 @@ impl Character {
     }
 
     pub fn take_simple_test(&mut self, skill: String, dificulty: u8) -> bool {
-        let roll = rand::thread_rng().gen_range(1, 101);
+        let roll = rand::random_range(1..101);
 
         let (attribute_name, is_basic) = self.prepare_take_test(skill.clone());
 
@@ -116,7 +144,7 @@ impl Character {
     }
 
     pub fn take_test(&mut self, skill: String, dificulty: u8) -> i32 {
-        let roll = rand::thread_rng().gen_range(1, 101);
+        let roll = rand::random_range(1..101);
 
         let (attribute_name, is_basic) = self.prepare_take_test(skill.clone());
 
