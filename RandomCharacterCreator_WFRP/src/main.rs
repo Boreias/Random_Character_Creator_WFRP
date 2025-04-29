@@ -23,7 +23,7 @@ fn main() {
             &[&species_argument]).unwrap();
         species = Species::new(species_db.get(0), species_db.get(1));
     } else {
-        let species_roll = rand::thread_rng().gen_range(1, 101);
+        let species_roll = rand::random_range(1..101);
 
         let species_db = client.query_one(
             "SELECT ID, Name FROM Species WHERE $1 BETWEEN InitialPercentage AND MaxPercentage",
@@ -40,7 +40,7 @@ fn main() {
             &[&career_argument]).unwrap();
         career = Career::new(career_db.get(0), career_db.get(1));
     } else {
-        let career_roll = rand::thread_rng().gen_range(1, 101);
+        let career_roll = rand::random_range(1..101);
 
         let career_db = client.query_one(
             "SELECT ID, Name FROM Career WHERE $1 BETWEEN InitialPercentage AND MaxPercentage",
