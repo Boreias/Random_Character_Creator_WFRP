@@ -96,7 +96,17 @@ CREATE TABLE SpeciesTalents (
     ID INT PRIMARY KEY AUTO_INCREMENT,
     SpeciesID INT NOT NULL,
     TalentID INT NOT NULL,
+    TalentGroup VARCHAR(255),
     FOREIGN KEY (SpeciesID) REFERENCES Species(ID),
+    FOREIGN KEY (TalentID) REFERENCES Talents(ID)
+);
+
+CREATE TABLE RandomTalents (
+    ID INT PRIMARY KEY AUTO_INCREMENT,
+    InitialPercentage INT NOT NULL,
+    MaxPercentage INT NOT NULL,
+    TalentID INT NOT NULL,
+    TalentGroup VARCHAR(255),
     FOREIGN KEY (TalentID) REFERENCES Talents(ID)
 );
 
@@ -126,6 +136,7 @@ CREATE TABLE CareerTalents (
     CareerID INT NOT NULL,
     TalentID INT NOT NULL,
     CareerLevel INT NOT NULL,
+    SkillGroup VARCHAR(255),
     FOREIGN KEY (CareerID) REFERENCES Career(ID),
     FOREIGN KEY (TalentID) REFERENCES Talents(ID)
 );
@@ -2593,6 +2604,105 @@ INSERT INTO Talents (Name) VALUES ('Waterman'); -- 164
 INSERT INTO Talents (Name) VALUES ('Wealthy'); -- 165
 INSERT INTO Talents (Name) VALUES ('Well-prepared'); -- 166
 INSERT INTO Talents (Name) VALUES ('Witch!'); -- 167
+INSERT INTO Talents (Name) VALUES ('Large'); -- 168
+INSERT INTO Talents (Name) VALUES ('Vice'); -- 169
+INSERT INTO Talents (Name) VALUES ('Suffused with Ulgu'); -- 170
+
+
+-- Human
+INSERT INTO SpeciesTalents (SpeciesID, TalentID) VALUES (1, 43); -- 1
+INSERT INTO SpeciesTalents (SpeciesID, TalentID) VALUES (1, 118); -- 2
+INSERT INTO SpeciesTalents (SpeciesID, TalentID) VALUES (1, 147); -- 3
+-- Halfling
+INSERT INTO SpeciesTalents (SpeciesID, TalentID, TalentGroup) VALUES (2, 2, 'Taste'); -- 4
+INSERT INTO SpeciesTalents (SpeciesID, TalentID) VALUES (2, 91); -- 5
+INSERT INTO SpeciesTalents (SpeciesID, TalentID, TalentGroup) VALUES (2, 109, 'Chaos'); -- 6
+INSERT INTO SpeciesTalents (SpeciesID, TalentID) VALUES (2, 131); -- 7
+-- Dwarf
+INSERT INTO SpeciesTalents (SpeciesID, TalentID) VALUES (3, 83); -- 8
+INSERT INTO SpeciesTalents (SpeciesID, TalentID) VALUES (3, 91); -- 9
+INSERT INTO SpeciesTalents (SpeciesID, TalentID) VALUES (3, 107); -- 10
+INSERT INTO SpeciesTalents (SpeciesID, TalentID) VALUES (3, 108); -- 11
+INSERT INTO SpeciesTalents (SpeciesID, TalentID) VALUES (3, 110); -- 12
+INSERT INTO SpeciesTalents (SpeciesID, TalentID) VALUES (3, 144); -- 13
+INSERT INTO SpeciesTalents (SpeciesID, TalentID) VALUES (3, 146); -- 14
+-- Ogre
+INSERT INTO SpeciesTalents (SpeciesID, TalentID) VALUES (4, 40); -- 15
+INSERT INTO SpeciesTalents (SpeciesID, TalentID) VALUES (4, 168); -- 16
+INSERT INTO SpeciesTalents (SpeciesID, TalentID) VALUES (4, 91); -- 17
+INSERT INTO SpeciesTalents (SpeciesID, TalentID, TalentGroup) VALUES (4, 109, 'Poison(Ingested)'); -- 18
+INSERT INTO SpeciesTalents (SpeciesID, TalentID) VALUES (4, 159); -- 19
+INSERT INTO SpeciesTalents (SpeciesID, TalentID) VALUES (4, 160); -- 20
+INSERT INTO SpeciesTalents (SpeciesID, TalentID, TalentGroup) VALUES (4, 169, 'Food'); -- 21
+-- Gnome
+INSERT INTO SpeciesTalents (SpeciesID, TalentID) VALUES (5, 13); -- 22
+INSERT INTO SpeciesTalents (SpeciesID, TalentID) VALUES (5, 170); -- 23
+INSERT INTO SpeciesTalents (SpeciesID, TalentID) VALUES (5, 81); -- 24
+INSERT INTO SpeciesTalents (SpeciesID, TalentID) VALUES (5, 90); -- 25
+INSERT INTO SpeciesTalents (SpeciesID, TalentID) VALUES (5, 91); -- 26
+INSERT INTO SpeciesTalents (SpeciesID, TalentID) VALUES (5, 54); -- 27
+INSERT INTO SpeciesTalents (SpeciesID, TalentID) VALUES (5, 107); -- 28
+INSERT INTO SpeciesTalents (SpeciesID, TalentID) VALUES (5, 123); -- 29
+INSERT INTO SpeciesTalents (SpeciesID, TalentID) VALUES (5, 129); -- 30
+INSERT INTO SpeciesTalents (SpeciesID, TalentID) VALUES (5, 131); -- 31
+-- High Elf
+INSERT INTO SpeciesTalents (SpeciesID, TalentID, TalentGroup) VALUES (6, 2, 'Sight'); -- 32
+INSERT INTO SpeciesTalents (SpeciesID, TalentID) VALUES (6, 32); -- 33
+INSERT INTO SpeciesTalents (SpeciesID, TalentID) VALUES (6, 118); -- 34
+INSERT INTO SpeciesTalents (SpeciesID, TalentID) VALUES (6, 91); -- 35
+INSERT INTO SpeciesTalents (SpeciesID, TalentID) VALUES (6, 123); -- 36
+INSERT INTO SpeciesTalents (SpeciesID, TalentID) VALUES (6, 129); -- 37
+INSERT INTO SpeciesTalents (SpeciesID, TalentID) VALUES (6, 107); -- 38
+-- Wood Elf
+INSERT INTO SpeciesTalents (SpeciesID, TalentID) VALUES (7, 2, 'Sight'); -- 39
+INSERT INTO SpeciesTalents (SpeciesID, TalentID) VALUES (7, 63); -- 40
+INSERT INTO SpeciesTalents (SpeciesID, TalentID) VALUES (7, 123); -- 41
+INSERT INTO SpeciesTalents (SpeciesID, TalentID) VALUES (7, 91); -- 42
+INSERT INTO SpeciesTalents (SpeciesID, TalentID) VALUES (7, 107); -- 43
+INSERT INTO SpeciesTalents (SpeciesID, TalentID) VALUES (7, 159); -- 44
+INSERT INTO SpeciesTalents (SpeciesID, TalentID) VALUES (7, 116); -- 45
+
+
+-- Apothecary
+-- Talents: Concoct, Craftsman (Apothecary), Etiquette
+-- (Scholar), Read/Write
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (1, 1, 30); -- 1
+-- Continue
+
+
+-- RandomTalents
+INSERT INTO RandomTalents (InitialPercentage, MaxPercentage, TalentID, TalentGroup) VALUES (1, 3, 2, 'Any'); -- 1
+INSERT INTO RandomTalents (InitialPercentage, MaxPercentage, TalentID) VALUES (4, 6, 5); -- 2
+INSERT INTO RandomTalents (InitialPercentage, MaxPercentage, TalentID) VALUES (7, 9, 6); -- 3
+INSERT INTO RandomTalents (InitialPercentage, MaxPercentage, TalentID) VALUES (10, 12, 9); -- 4
+INSERT INTO RandomTalents (InitialPercentage, MaxPercentage, TalentID) VALUES (13, 15, 10); -- 5
+INSERT INTO RandomTalents (InitialPercentage, MaxPercentage, TalentID) VALUES (16, 18, 32); -- 6
+INSERT INTO RandomTalents (InitialPercentage, MaxPercentage, TalentID, TalentGroup) VALUES (19, 21, 34, 'Any'); -- 7
+INSERT INTO RandomTalents (InitialPercentage, MaxPercentage, TalentID) VALUES (22, 24, 56); -- 8
+INSERT INTO RandomTalents (InitialPercentage, MaxPercentage, TalentID) VALUES (25, 28, 63); -- 9
+INSERT INTO RandomTalents (InitialPercentage, MaxPercentage, TalentID) VALUES (29, 31, 78); -- 10
+INSERT INTO RandomTalents (InitialPercentage, MaxPercentage, TalentID) VALUES (32, 34, 79); -- 11
+INSERT INTO RandomTalents (InitialPercentage, MaxPercentage, TalentID) VALUES (35, 38, 81); -- 12
+INSERT INTO RandomTalents (InitialPercentage, MaxPercentage, TalentID) VALUES (39, 41, 85); -- 13
+INSERT INTO RandomTalents (InitialPercentage, MaxPercentage, TalentID) VALUES (42, 44, 90); -- 14
+INSERT INTO RandomTalents (InitialPercentage, MaxPercentage, TalentID) VALUES (45, 47, 91); -- 15
+INSERT INTO RandomTalents (InitialPercentage, MaxPercentage, TalentID) VALUES (48, 50, 92); -- 16
+INSERT INTO RandomTalents (InitialPercentage, MaxPercentage, TalentID) VALUES (51, 52, 93); -- 17
+INSERT INTO RandomTalents (InitialPercentage, MaxPercentage, TalentID) VALUES (53, 55, 97); -- 18
+INSERT INTO RandomTalents (InitialPercentage, MaxPercentage, TalentID) VALUES (56, 58, 99); -- 19
+INSERT INTO RandomTalents (InitialPercentage, MaxPercentage, TalentID) VALUES (59, 62, 104); -- 20
+INSERT INTO RandomTalents (InitialPercentage, MaxPercentage, TalentID) VALUES (63, 65, 107); -- 21
+INSERT INTO RandomTalents (InitialPercentage, MaxPercentage, TalentID, TalentGroup) VALUES (66, 68, 109, 'Any'); -- 22
+INSERT INTO RandomTalents (InitialPercentage, MaxPercentage, TalentID) VALUES (69, 71, 118); -- 23
+INSERT INTO RandomTalents (InitialPercentage, MaxPercentage, TalentID) VALUES (72, 74, 126); -- 24
+INSERT INTO RandomTalents (InitialPercentage, MaxPercentage, TalentID) VALUES (75, 78, 129); -- 25
+INSERT INTO RandomTalents (InitialPercentage, MaxPercentage, TalentID) VALUES (79, 81, 143); -- 26
+INSERT INTO RandomTalents (InitialPercentage, MaxPercentage, TalentID) VALUES (82, 84, 146); -- 27
+INSERT INTO RandomTalents (InitialPercentage, MaxPercentage, TalentID) VALUES (85, 87, 147); -- 28
+INSERT INTO RandomTalents (InitialPercentage, MaxPercentage, TalentID) VALUES (88, 91, 148); -- 29
+INSERT INTO RandomTalents (InitialPercentage, MaxPercentage, TalentID) VALUES (92, 94, 159); -- 30
+INSERT INTO RandomTalents (InitialPercentage, MaxPercentage, TalentID) VALUES (95, 97, 160); -- 31
+INSERT INTO RandomTalents (InitialPercentage, MaxPercentage, TalentID) VALUES (98, 100, 163); -- 32
 
 
 -- Gods
