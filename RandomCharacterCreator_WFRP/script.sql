@@ -3481,6 +3481,142 @@ INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (48, 70, 4); 
 INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (48, 102, 4); -- 761
 INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (48, 163, 4); -- 762
 -- Bawd
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (49, 10, 1); -- 763
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (49, 4, 1); -- 764
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (49, 15, 1); -- 765
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (49, 61, 1); -- 766
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (49, 5, 2); -- 767
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (49, 22, 2); -- 768
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (49, 35, 2); -- 769
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel, TalentGroup) VALUES (49, 109, 2, 'Disease'); -- 770
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (49, 37, 3); -- 771
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (49, 46, 3); -- 772
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel, TalentGroup) VALUES (49, 48, 3, 'Any'); -- 773
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (49, 147, 3); -- 774
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (49, 19, 4); -- 775
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (49, 77, 4); -- 776
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (49, 95, 4); -- 777
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (49, 118, 4); -- 778
+-- Charlatan
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (50, 20, 1); -- 779
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (50, 39, 1); -- 780
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel, TalentGroup) VALUES (50, 48, 1, 'Any'); -- 781
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (50, 81, 1); -- 782
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (50, 15, 2); -- 783
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (50, 35, 2); -- 784
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (50, 49, 2); -- 785
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (50, 124, 2); -- 786
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (50, 10, 3); -- 787
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (50, 24, 3); -- 788
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (50, 37, 3); -- 789
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (50, 107, 3); -- 790
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (50, 61, 4); -- 791
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (50, 86, 4); -- 792
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (50, 94, 4); -- 793
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (50, 147, 4); -- 794
+-- Fence
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (51, 4, 1); -- 795
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (51, 20, 1); -- 796
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (51, 37, 1); -- 797
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (51, 61, 1); -- 798
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (51, 35, 2); -- 799
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel, TalentGroup) VALUES (51, 48, 2, 'Criminals'); -- 800
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (51, 95, 2); -- 801
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (51, 118, 2); -- 802
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (51, 77, 3); -- 803
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (51, 141, 3); -- 804
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (51, 147, 3); -- 805
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (51, 148, 3); -- 806
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (51, 40, 4); -- 807
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (51, 75, 4); -- 808
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (51, 89, 4); -- 809
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (51, 19, 4); -- 810
+-- Grave Robber
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (52, 4, 1); -- 811
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (52, 35, 1); -- 812
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (52, 56, 1); -- 813
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (52, 142, 1); -- 814
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (52, 18, 2); -- 815
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (52, 91, 2); -- 816
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel, TalentGroup) VALUES (52, 109, 2, 'Disease'); -- 817
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (52, 160, 2); -- 818
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (52, 107, 3); -- 819
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (52, 139, 3); -- 820
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (52, 152, 3); -- 821
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (52, 157, 3); -- 822
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel, TalentGroup) VALUES (52, 51, 4, 'Undead'); -- 823
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (52, 129, 4); -- 824
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (52, 144, 4); -- 825
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (52, 155, 4); -- 826
+-- Outlaw
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (53, 26, 1); -- 827
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (53, 35, 1); -- 828
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (53, 116, 1); -- 829
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (53, 56, 1); -- 830
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (53, 40, 2); -- 831
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (53, 85, 2); -- 832
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (53, 141, 2); -- 833
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (53, 155, 2); -- 834
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (53, 105, 3); -- 835
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (53, 115, 3); -- 836
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (53, 89, 3); -- 837
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (53, 159, 3); -- 838
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (53, 36, 4); -- 839
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel, TalentGroup) VALUES (53, 51, 4, 'Road Wardens'); -- 840
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (53, 75, 4); -- 841
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (53, 114, 4); -- 842
+-- Racketeer
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (54, 35, 1); -- 843
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel, TalentGroup) VALUES (54, 48, 1, 'Criminals'); -- 844
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (54, 89, 1); -- 845
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (54, 139, 1); -- 846
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (54, 40, 2); -- 847
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (54, 46, 2); -- 848
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (54, 141, 2); -- 849
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (54, 163, 2); -- 850
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel, TalentGroup) VALUES (54, 51, 3, 'Watchmen'); -- 851
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (54, 75, 3); -- 852
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel, TalentGroup) VALUES (54, 109, 3, 'Poison'); -- 853
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (54, 114, 3); -- 854
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (54, 29, 4); -- 855
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (54, 77, 4); -- 856
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (54, 59, 4); -- 857
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (54, 165, 4); -- 858
+-- Thief
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (55, 4, 1); -- 859
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (55, 35, 1); -- 860
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (55, 56, 1); -- 861
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (55, 141, 1); -- 862
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (55, 18, 2); -- 863
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel, TalentGroup) VALUES (55, 48, 2, 'Criminals'); -- 864
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (55, 49, 2); -- 865
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (55, 125, 2); -- 866
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (55, 91, 3); -- 867
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (55, 92, 3); -- 868
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (55, 135, 3); -- 869
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (55, 155, 3); -- 870
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (55, 23, 4); -- 871
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (55, 119, 4); -- 872
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (55, 143, 4); -- 873
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (55, 165, 4); -- 874
+-- Witch
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (56, 35, 1); -- 875
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (56, 72, 1); -- 876
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (56, 89, 1); -- 877
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (56, 100, 1); -- 878
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel, TalentGroup) VALUES (56, 7, 2, 'Witchery'); -- 879
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (56, 10, 2); -- 880
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (56, 123, 2); -- 881
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (56, 167, 2); -- 882
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (56, 6, 3); -- 883
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (56, 49, 3); -- 884
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (56, 59, 3); -- 885
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (56, 82, 3); -- 886
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (56, 3, 4); -- 887
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (56, 81, 4); -- 888
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (56, 144, 4); -- 889
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (56, 159, 4); -- 890
+-- Cavalryman
 -- Continue
 
 
