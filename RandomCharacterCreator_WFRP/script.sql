@@ -3753,6 +3753,56 @@ INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (64, 60, 4); 
 INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (64, 65, 4); -- 1017
 INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (64, 161, 4); -- 1018
 -- Butcher
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (65, 69, 1); -- 1019
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (65, 100, 1); -- 1020
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (65, 129, 1); -- 1021
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (65, 142, 1); -- 1022
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel, TalentGroup) VALUES (65, 2, 2, 'Taste'); -- 1023
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (65, 3, 2); -- 1024
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel, TalentGroup) VALUES (65, 7, 2, 'Lore of the Great Maw'); -- 1025
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (65, 66, 2); -- 1026
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (65, 59, 3); -- 1027
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (65, 123, 3); -- 1028
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (65, 139, 3); -- 1029
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (65, 162, 3); -- 1030
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (65, 38, 4); -- 1031
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (65, 68, 4); -- 1032
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (65, 71, 4); -- 1033
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (65, 82, 4); -- 1034
+-- Rhinox Herder
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (66, 56, 1); -- 1035
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (66, 85, 1); -- 1036
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (66, 116, 1); -- 1037
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel, TalentGroup) VALUES (66, 138, 1, 'Mountains'); -- 1038
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel, TalentGroup) VALUES (66, 51, 2, 'Large Beasts'); -- 1039
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (66, 115, 2); -- 1040
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (66, 137, 2); -- 1041
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (66, 146, 2); -- 1042
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (66, 42, 3); -- 1043
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (66, 110, 3); -- 1044
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (66, 122, 3); -- 1045
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (66, 156, 3); -- 1046
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (66, 22, 4); -- 1047
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (66, 59, 4); -- 1048
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (66, 71, 4); -- 1049
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (66, 140, 4); -- 1050
+-- Maneater
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (67, 40, 1); -- 1051
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (67, 89, 1); -- 1052
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (67, 142, 1); -- 1053
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (67, 146, 1); -- 1054
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel, TalentGroup) VALUES (67, 48, 2, 'Slims'); -- 1055
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (67, 105, 2); -- 1056
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (67, 122, 2); -- 1057
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (67, 139, 2); -- 1058
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (67, 1, 3); -- 1059
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (67, 28, 3); -- 1060
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (67, 59, 3); -- 1061
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (67, 63, 3); -- 1062
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (67, 27, 4); -- 1063
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (67, 60, 4); -- 1064
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (67, 106, 4); -- 1065
+INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (67, 161, 4); -- 1066
 -- Continue
 
 
