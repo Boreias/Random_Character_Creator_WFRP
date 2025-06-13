@@ -208,6 +208,7 @@ INSERT INTO Class (Name) VALUES ('Rangers'); -- 5
 INSERT INTO Class (Name) VALUES ('Riverfolk'); -- 6
 INSERT INTO Class (Name) VALUES ('Rogues'); -- 7
 INSERT INTO Class (Name) VALUES ('Warriors'); -- 8
+INSERT INTO Class (Name) VALUES ('Seafarer'); -- 9
 
 
 INSERT INTO Career (Name, ClassID) VALUES ('Apothecary', 1); -- 1
@@ -275,9 +276,47 @@ INSERT INTO Career (Name, ClassID) VALUES ('Slayer', 8); -- 62
 INSERT INTO Career (Name, ClassID) VALUES ('Soldier', 8); -- 63
 INSERT INTO Career (Name, ClassID) VALUES ('Warrior Priest', 8); -- 64
 -- New Careers
-INSERT INTO Career (Name, ClassID) VALUES ('Butcher', 1); -- 65
-INSERT INTO Career (Name, ClassID) VALUES ('Rhinox Herder', 4); -- 66
-INSERT INTO Career (Name, ClassID) VALUES ('Maneater', 8); -- 67
+INSERT INTO Career (Name, ClassID) VALUES ('Butcher', 1); -- 65 -- Archives of the Empire - Volume 2
+INSERT INTO Career (Name, ClassID) VALUES ('Rhinox Herder', 4); -- 66 -- Archives of the Empire - Volume 2
+INSERT INTO Career (Name, ClassID) VALUES ('Maneater', 8); -- 67 -- Archives of the Empire - Volume 2
+INSERT INTO Career (Name, ClassID) VALUES ('Owler', 5); -- 68 -- Salzemund - City of Salt and Silver
+INSERT INTO Career (Name, ClassID) VALUES ('Archer', 8); -- 69 -- Up in Arms
+INSERT INTO Career (Name, ClassID) VALUES ('Greatsword', 8); -- 70 -- Up in Arms
+INSERT INTO Career (Name, ClassID) VALUES ('Halberdier', 8); -- 71 -- Up in Arms
+INSERT INTO Career (Name, ClassID) VALUES ('Handgunner', 8); -- 72 -- Up in Arms
+INSERT INTO Career (Name, ClassID) VALUES ('Artillerist', 1); -- 73 -- Up in Arms
+INSERT INTO Career (Name, ClassID) VALUES ('Camp Follower', 5); -- 74 -- Up in Arms
+INSERT INTO Career (Name, ClassID) VALUES ('Cartographer', 1); -- 75 -- Up in Arms
+INSERT INTO Career (Name, ClassID) VALUES ('Freelance Knight', 8); -- 76 -- Up in Arms
+INSERT INTO Career (Name, ClassID) VALUES ('Knight of the Blazing Sun', 8); -- 77 -- Up in Arms
+INSERT INTO Career (Name, ClassID) VALUES ('Knight of the White Wolf', 8); -- 78 -- Up in Arms
+INSERT INTO Career (Name, ClassID) VALUES ('Knight Panther', 8); -- 79 -- Up in Arms
+INSERT INTO Career (Name, ClassID) VALUES ('Light Cavalry', 8); -- 80 -- Up in Arms
+INSERT INTO Career (Name, ClassID) VALUES ('Siege Specialist', 8); -- 81 -- Up in Arms
+INSERT INTO Career (Name, ClassID) VALUES ('Pikeman', 8); -- 82 -- Up in Arms
+INSERT INTO Career (Name, ClassID) VALUES ('Warrior Priest of Myrmidia', 8); -- 83 -- Up in Arms
+INSERT INTO Career (Name, ClassID) VALUES ('Wolf Kin', 5); -- 84 -- Middenheim - City of the White Wolf
+INSERT INTO Career (Name, ClassID) VALUES ('Beachcomber', 9); -- 85 -- Sea of Claws
+INSERT INTO Career (Name, ClassID) VALUES ('Chantyman', 9); -- 86 -- Sea of Claws
+INSERT INTO Career (Name, ClassID) VALUES ('Huffer', 9); -- 87 -- Sea of Claws
+INSERT INTO Career (Name, ClassID) VALUES ('Officer', 9); -- 88 -- Sea of Claws
+INSERT INTO Career (Name, ClassID) VALUES ('Sailor', 9); -- 89 -- Sea of Claws
+INSERT INTO Career (Name, ClassID) VALUES ('Sailor-Priest of Manann', 9); -- 90 -- Sea of Claws
+INSERT INTO Career (Name, ClassID) VALUES ('Ship’s Gunner', 9); -- 90 -- Sea of Claws
+INSERT INTO Career (Name, ClassID) VALUES ('Wrecker', 9); -- 91 -- Sea of Claws
+INSERT INTO Career (Name, ClassID) VALUES ('Priest of Stromfels', 9); -- 92 -- Sea of Claws
+INSERT INTO Career (Name, ClassID) VALUES ('Beadle', 8); -- 93 -- Winds of Magic
+INSERT INTO Career (Name, ClassID) VALUES ('Mundane Alchemist', 1); -- 94 -- Winds of Magic
+INSERT INTO Career (Name, ClassID) VALUES ('Magister Vigilant', 1); -- 95 -- Winds of Magic
+INSERT INTO Career (Name, ClassID) VALUES ('Scryer', 4); -- 96 -- Winds of Magic
+INSERT INTO Career (Name, ClassID) VALUES ('Hierophant', 1); -- 97 -- Winds of Magic
+INSERT INTO Career (Name, ClassID) VALUES ('Alchemist', 1); -- 98 -- Winds of Magic
+INSERT INTO Career (Name, ClassID) VALUES ('Druid', 1); -- 99 -- Winds of Magic
+INSERT INTO Career (Name, ClassID) VALUES ('Astromancer', 1); -- 100 -- Winds of Magic
+INSERT INTO Career (Name, ClassID) VALUES ('Shadowmancer', 1); -- 101 -- Winds of Magic
+INSERT INTO Career (Name, ClassID) VALUES ('Spiriter', 1); -- 102 -- Winds of Magic
+INSERT INTO Career (Name, ClassID) VALUES ('Pyromancer', 1); -- 103 -- Winds of Magic
+INSERT INTO Career (Name, ClassID) VALUES ('Shaman', 1); -- 104 -- Winds of Magic
 
 
 -- Human
@@ -3803,7 +3842,6 @@ INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (67, 27, 4); 
 INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (67, 60, 4); -- 1064
 INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (67, 106, 4); -- 1065
 INSERT INTO CareerTalents (CareerID, TalentID, CareerLevel) VALUES (67, 161, 4); -- 1066
--- Continue
 
 
 -- RandomTalents
