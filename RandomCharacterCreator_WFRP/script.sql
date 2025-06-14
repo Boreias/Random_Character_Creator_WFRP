@@ -2402,6 +2402,145 @@ INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (3, 67, 22); --
 INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (3, 67, 24); -- 1348
 INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (4, 67, 34, 'Any'); -- 1349
 INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (4, 67, 23, 'Any'); -- 1350
+-- Owler
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 68, 1); -- 1351
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 68, 5); -- 1352
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 68, 10); -- 1353
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 68, 14); -- 1354
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 68, 16); -- 1355
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 68, 19); -- 1356
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 68, 26, 'Basic'); -- 1357
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 68, 28); -- 1358
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 68, 36); -- 1359
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 68, 42, 'Rural'); -- 1360
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 68, 42, 'Urban'); -- 1361
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 68, 4); -- 1362
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 68, 7); -- 1363
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 68, 18); -- 1364
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (2, 68, 25, 'Local'); -- 1365
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 68, 29); -- 1366
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (2, 68, 39, 'Smuggler'); -- 1367
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (3, 68, 21); -- 1368
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (3, 68, 22); -- 1369
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (3, 68, 25, 'Law'); -- 1370
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (3, 68, 25, 'Roadways'); -- 1371
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (4, 68, 23, 'Any'); -- 1372
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (4, 68, 24); -- 1373
+-- Archer
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 69, 4); -- 1374
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 69, 9); -- 1375
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 69, 10); -- 1376
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 69, 12); -- 1377
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 69, 14); -- 1378
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 69, 23, 'Battle'); -- 1379
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 69, 29); -- 1380
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 69, 32, 'Horn'); -- 1381
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 69, 34, 'Bow'); -- 1382
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 69, 42, 'Rural'); -- 1383
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 69, 17); -- 1384
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 69, 18); -- 1385
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (2, 69, 26, 'Basic'); -- 1386
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 69, 28); -- 1387
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 69, 44); -- 1388
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (2, 69, 45, 'Fletcher'); -- 1389
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (3, 69, 11); -- 1390
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (3, 69, 24); -- 1391
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (3, 69, 27); -- 1392
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (3, 69, 36, 'Horse'); -- 1393
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (4, 69, 25, 'Warfare'); -- 1394
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (4, 69, 39, 'Scout'); -- 1395
+-- Greatsword
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 70, 4); -- 1396
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 70, 10); -- 1397
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 70, 11); -- 1398
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 70, 12); -- 1399
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 70, 14); -- 1400
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 70, 18); -- 1401
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 70, 23, 'Battle'); -- 1402
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 70, 26, 'Basic'); -- 1403
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 70, 26, 'Two-handed'); -- 1404
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 70, 32, 'Drum'); -- 1405
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 70, 17); -- 1406
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 70, 21); -- 1407
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (2, 70, 25, 'Heraldry'); -- 1408
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (2, 70, 26, 'Any'); -- 1409
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 70, 28); -- 1410
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 70, 29); -- 1411
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (3, 70, 22); -- 1412
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (3, 70, 24); -- 1413
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (3, 70, 27); -- 1414
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (3, 70, 36, 'Horse'); -- 1415
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (4, 70, 7); -- 1416
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (4, 70, 25, 'Warfare'); -- 1417
+-- Halberdier
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 71, 4); -- 1418
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 71, 10); -- 1419
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 71, 11); -- 1420
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 71, 12); -- 1421
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 71, 14); -- 1422
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 71, 23, 'Battle'); -- 1423
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 71, 26, 'Basic'); -- 1424
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 71, 26, 'Polearm'); -- 1425
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 71, 30, 'Parade'); -- 1426
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 71, 32, 'Drum'); -- 1427
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 71, 9); -- 1428
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 71, 17); -- 1429
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 71, 18); -- 1430
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 71, 21); -- 1431
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 71, 28); -- 1432
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 71, 29); -- 1433
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (3, 71, 22); -- 1434
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (3, 71, 24); -- 1435
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (3, 71, 27); -- 1436
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (3, 71, 36, 'Horse'); -- 1437
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (4, 71, 7); -- 1438
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (4, 71, 25, 'Warfare'); -- 1439
+-- Handgunner
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 72, 4); -- 1440
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 72, 10); -- 1441
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 72, 11); -- 1442
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 72, 12); -- 1443
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 72, 14); -- 1444
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 72, 23, 'Battle'); -- 1445
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 72, 26, 'Basic'); -- 1446
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 72, 29); -- 1447
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 72, 32, 'Flute'); -- 1448
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 72, 34, 'Blackpowder'); -- 1449
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 72, 9); -- 1450
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 72, 17); -- 1451
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 72, 18); -- 1452
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 72, 22); -- 1453
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 72, 28); -- 1454
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (2, 72, 45, 'Gunsmith'); -- 1455
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (3, 72, 24); -- 1456
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (3, 72, 27); -- 1457
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (3, 72, 34, 'Engineer'); -- 1458
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (3, 72, 36, 'Horse'); -- 1459
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (4, 72, 7); -- 1460
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (4, 72, 25, 'Warfare'); -- 1461
+-- Artillerist
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 73, 1); -- 1462
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 73, 11); -- 1463
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 73, 13); -- 1464
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 73, 14); -- 1465
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 73, 16); -- 1466
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 73, 23, 'Battle'); -- 1467
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 73, 26, 'Basic'); -- 1468
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 73, 27); -- 1469
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 73, 29); -- 1470
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 73, 34, 'Blackpowder OR Catapult OR Crossbow OR Engineering'); -- 1471
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 73, 10); -- 1472
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 73, 17); -- 1473
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 73, 18); -- 1474
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 73, 28); -- 1475
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (2, 73, 34, 'Blackpowder OR Catapult OR Crossbow OR Engineering'); -- 1476
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (2, 73, 45, 'Carpenter OR Gunsmith'); -- 1477
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (3, 73, 22); -- 1478
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (3, 73, 24); -- 1479
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (3, 73, 25, 'Artillery'); -- 1480
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (3, 73, 36, 'Horse'); -- 1481
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (4, 73, 7); -- 1482
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (4, 73, 25, 'Warfare'); -- 1483
 
 
 -- Trade Skills
@@ -2473,6 +2612,13 @@ INSERT INTO CareerTradeSkill (CareerSkillsID) VALUES (1271); -- 65 -- Warrior Pr
 INSERT INTO CareerTradeSkill (CareerSkillsID) VALUES (1295); -- 66 -- Butcher
 INSERT INTO CareerTradeSkill (CareerSkillsID) VALUES (1316); -- 67 -- Rhinox Herder
 INSERT INTO CareerTradeSkill (CareerSkillsID) VALUES (1339); -- 68 -- Maneater
+INSERT INTO CareerTradeSkill (CareerSkillsID) VALUES (1360); -- 69 -- Owler
+INSERT INTO CareerTradeSkill (CareerSkillsID) VALUES (1361); -- 70 -- Owler
+INSERT INTO CareerTradeSkill (CareerSkillsID) VALUES (1382); -- 70 -- Archer
+INSERT INTO CareerTradeSkill (CareerSkillsID) VALUES (1404); -- 71 -- Greatsword
+INSERT INTO CareerTradeSkill (CareerSkillsID) VALUES (1425); -- 72 -- Halberdier
+INSERT INTO CareerTradeSkill (CareerSkillsID) VALUES (1449); -- 73 -- Handgunner
+INSERT INTO CareerTradeSkill (CareerSkillsID) VALUES (1471); -- 74 -- Artillerist
 
 
 -- Talents
