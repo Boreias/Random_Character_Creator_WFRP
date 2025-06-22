@@ -747,6 +747,8 @@ INSERT INTO Skills (Name, IsBasic, IsGrouped, AttributeID) VALUES ('Stealth', TR
 INSERT INTO Skills (Name, IsBasic, IsGrouped, AttributeID) VALUES ('Swim', FALSE, FALSE, 3); -- 43
 INSERT INTO Skills (Name, IsBasic, IsGrouped, AttributeID) VALUES ('Track', FALSE, FALSE, 5); -- 44
 INSERT INTO Skills (Name, IsBasic, IsGrouped, AttributeID) VALUES ('Trade', FALSE, TRUE, 7); -- 45
+INSERT INTO Skills (Name, IsBasic, IsGrouped, AttributeID) VALUES ('Psychometry', FALSE, FALSE, 8); -- 46
+INSERT INTO Skills (Name, IsBasic, IsGrouped, AttributeID) VALUES ('Augury', FALSE, FALSE, 8); -- 47
 
 
 -- Human
@@ -2994,6 +2996,281 @@ INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (3, 93, 40); --
 INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (4, 93, 26, 'Any'); -- 1914
 INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (4, 93, 34, 'Blackpowder'); -- 1915
 -- Beadle
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 94, 10); -- 1916
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 94, 12); -- 1917
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 94, 14); -- 1918
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 94, 17); -- 1919
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 94, 18); -- 1920
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 94, 22); -- 1921
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 94, 26, 'Basic'); -- 1922
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 94, 29); -- 1923
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 94, 42, 'Urban'); -- 1924
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 94, 45, 'Carpenter'); -- 1925
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 94, 4); -- 1926
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 94, 7); -- 1927
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 94, 11); -- 1928
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 94, 21); -- 1929
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (2, 94, 25, 'Any'); -- 1930
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (2, 94, 34, 'Blackpowder'); -- 1931
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (3, 94, 15, 'Storytelling'); -- 1932
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (3, 94, 20); -- 1933
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (3, 94, 26, 'Any'); -- 1934
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (3, 94, 44); -- 1935
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (4, 94, 24); -- 1936
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (4, 94, 25, 'Any'); -- 1937
+-- Mundane Alchemist
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 95, 7); -- 1938
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 95, 10); -- 1939
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 95, 18); -- 1940
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 95, 19); -- 1941
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 95, 23, 'Classical'); -- 1942
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 95, 25, 'Chemistry'); -- 1943
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 95, 25, 'Geology'); -- 1944
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 95, 25, 'Science'); -- 1945
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 95, 45, 'Alchemist'); -- 1946
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 95, 45, 'Poisoner'); -- 1947
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 95, 22); -- 1948
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (2, 95, 25, 'Medicine'); -- 1949
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (2, 95, 23, 'Guilder'); -- 1950
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 95, 29); -- 1951
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 95, 35); -- 1952
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (2, 95, 39, 'Guilder'); -- 1953
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (3, 95, 13); -- 1954
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (3, 95, 23, 'Any'); -- 1955
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (3, 95, 24); -- 1956
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (3, 95, 25, 'Any'); -- 1957
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (4, 95, 6, 'Chamon'); -- 1958
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (4, 95, 36, 'Horse'); -- 1959
+-- Magister Vigilant
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 96, 6, 'Any Colour'); -- 1960
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 96, 7); -- 1961
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 96, 11); -- 1962
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 96, 12); -- 1963
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 96, 22); -- 1964
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 96, 23, 'Magick'); -- 1965
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 96, 25, 'Magic'); -- 1966
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 96, 26, 'Basic'); -- 1967
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 96, 26, 'Basic'); -- 1968
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 96, 29); -- 1969
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 96, 18); -- 1970
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 96, 21); -- 1971
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (2, 96, 23, 'Battle'); -- 1972
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 96, 31); -- 1973
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 96, 35); -- 1974
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 96, 44); -- 1975
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (3, 96, 27); -- 1976
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (3, 96, 39, 'Any'); -- 1977
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (3, 96, 41); -- 1978
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (3, 96, 42, 'Urban'); -- 1979
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (4, 96, 25, 'Any'); -- 1980
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (4, 96, 40); -- 1981
+-- Scryer
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 97, 12); -- 1982
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 97, 22); -- 1983
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 97, 25, 'Local'); -- 1984
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 97, 26, 'Basic'); -- 1985
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 97, 28); -- 1986
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 97, 27); -- 1987
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 97, 29); -- 1988
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 97, 46); -- 1989
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 97, 41); -- 1990
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 97, 42, 'Rural'); -- 1991
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 97, 5); -- 1992
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 97, 11); -- 1993
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 97, 14); -- 1994
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 97, 18); -- 1995
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 97, 19); -- 1996
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 97, 21); -- 1997
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (3, 97, 7); -- 1998
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (3, 97, 16); -- 1999
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (3, 97, 25, 'History'); -- 2000
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (3, 97, 25, 'Politics'); -- 2001
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (4, 97, 15, 'Storytelling'); -- 2002
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (4, 97, 24); -- 2003
+-- Hierophant
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 98, 6, 'Hysh'); -- 2004
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 98, 12); -- 2005
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 98, 15, 'Sing'); -- 2006
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 98, 22); -- 2007
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 98, 23, 'Magick'); -- 2008
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 98, 25, 'Magic'); -- 2009
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 98, 25, 'Nehekhara'); -- 2010
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 98, 26, 'Basic'); -- 2011
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 98, 26, 'Polearm'); -- 2012
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 98, 29); -- 2013
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 98, 7); -- 2014
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 98, 11); -- 2015
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 98, 18); -- 2016
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (2, 98, 23, 'Any'); -- 2017
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 98, 24); -- 2018
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (2, 98, 25, 'Warfare'); -- 2019
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (3, 98, 16); -- 2020
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (3, 98, 25, 'Daemonology'); -- 2021
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (3, 98, 35); -- 2022
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (3, 98, 36, 'Horse'); -- 2023
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (4, 98, 23, 'Any'); -- 2024
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (4, 98, 25, 'Any'); -- 2025
+-- Alchemist
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 99, 6, 'Chamon'); -- 2026
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 99, 16); -- 2027
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 99, 19); -- 2028
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 99, 22); -- 2029
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 99, 23, 'Magick'); -- 2030
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 99, 25, 'Magic'); -- 2031
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 99, 26, 'Basic'); -- 2032
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 99, 26, 'Polearm'); -- 2033
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 99, 29); -- 2034
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 99, 45, 'Alchemist'); -- 2035
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 99, 7); -- 2036
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 99, 11); -- 2037
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 99, 21); -- 2038
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (2, 99, 25, 'Metallurgy'); -- 2039
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 99, 35); -- 2040
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (2, 99, 45, 'Blacksmith OR Goldsmith OR Engineer'); -- 2041
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (3, 99, 25, 'Engineering'); -- 2042
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (3, 99, 25, 'Science'); -- 2043
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (3, 99, 36, 'Horse'); -- 2044
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (3, 99, 45, 'Engineer'); -- 2045
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (4, 99, 23, 'Khazalid'); -- 2046
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (4, 99, 25, 'Any'); -- 2047
+-- Druid
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 100, 6, 'Ghyran'); -- 2048
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 100, 8); -- 2049
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 100, 12); -- 2050
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 100, 22); -- 2051
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 100, 23, 'Magick'); -- 2052
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 100, 25, 'Magic'); -- 2053
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 100, 26, 'Basic'); -- 2054
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 100, 26, 'Polearm'); -- 2055
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 100, 28); -- 2056
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 100, 29); -- 2057
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 100, 7); -- 2058
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 100, 18); -- 2059
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (2, 100, 23, 'Any'); -- 2060
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (2, 100, 23, 'Battle'); -- 2061
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 100, 27); -- 2062
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 100, 35); -- 2063
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (3, 100, 1); -- 2064
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (3, 100, 16); -- 2065
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (3, 100, 25, 'Plants'); -- 2066
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (3, 100, 36, 'Horse'); -- 2067
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (4, 100, 23, 'Any'); -- 2068
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (4, 100, 25, 'Any'); -- 2069
+-- Astromancer
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 101, 47); -- 2070
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 101, 6, 'Azyr'); -- 2071
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 101, 12); -- 2072
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 101, 15, 'Fortune Telling'); -- 2073
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 101, 22); -- 2074
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 101, 23, 'Magick'); -- 2075
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 101, 25, 'Magic'); -- 2076
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 101, 26, 'Basic'); -- 2077
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 101, 26, 'Polearm'); -- 2078
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 101, 29); -- 2079
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 101, 11); -- 2080
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 101, 18); -- 2081
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 101, 21); -- 2082
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (2, 101, 23, 'Battle'); -- 2083
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (2, 101, 25, 'Astronomy'); -- 2084
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 101, 35); -- 2085
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (3, 101, 16); -- 2086
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (3, 101, 27); -- 2087
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (3, 101, 25, 'Prophecy'); -- 2088
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (3, 101, 36, 'Horse'); -- 2089
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (4, 101, 23, 'Any'); -- 2090
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (4, 101, 25, 'Any'); -- 2091
+-- Shadowmancer
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 102, 6, 'Ulgu'); -- 2092
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 102, 12); -- 2093
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 102, 22); -- 2094
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 102, 23, 'Magick'); -- 2095
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 102, 25, 'Magic'); -- 2096
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 102, 26, 'Basic'); -- 2097
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 102, 26, 'Polearm'); -- 2098
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 102, 29); -- 2099
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 102, 39, 'Grey Order'); -- 2100
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 102, 42, 'Urban'); -- 2101
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 102, 7); -- 2102
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 102, 11); -- 2103
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (2, 102, 15, 'Acting'); -- 2104
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 102, 18); -- 2105
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 102, 21); -- 2106
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (2, 102, 23, 'Any'); -- 2107
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (3, 102, 16); -- 2108
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (3, 102, 25, 'Politics'); -- 2109
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (3, 102, 35); -- 2110
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (3, 102, 36, 'Horse'); -- 2111
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (4, 102, 23, 'Any'); -- 2112
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (4, 102, 25, 'Any'); -- 2113
+-- Spiriter
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 103, 6, 'Shyish'); -- 2114
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 103, 11); -- 2115
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 103, 12); -- 2116
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 103, 21); -- 2117
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 103, 22); -- 2118
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 103, 23, 'Magick'); -- 2119
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 103, 25, 'Magic'); -- 2120
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 103, 26, 'Basic'); -- 2121
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 103, 26, 'Polearm'); -- 2122
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 103, 29); -- 2123
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (2, 103, 3, 'Engraving'); -- 2124
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 103, 14); -- 2125
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 103, 16); -- 2126
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (2, 103, 23, 'Battle'); -- 2127
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (2, 103, 25, 'Undead'); -- 2128
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 103, 35); -- 2129
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (3, 103, 1); -- 2130
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (3, 103, 24); -- 2131
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (3, 103, 25, 'Warfare'); -- 2132
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (3, 103, 36, 'Horse'); -- 2133
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (4, 103, 23, 'Any'); -- 2134
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (4, 103, 25, 'Any'); -- 2135
+-- Pyromancer
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 104, 6, 'Aqshy'); -- 2136
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 104, 12); -- 2137
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 104, 21); -- 2138
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 104, 22); -- 2139
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 104, 23, 'Battle'); -- 2140
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 104, 23, 'Magick'); -- 2141
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 104, 25, 'Magic'); -- 2142
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 104, 26, 'Basic'); -- 2143
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 104, 26, 'Polearm'); -- 2144
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 104, 29); -- 2145
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 104, 7); -- 2146
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 104, 11); -- 2147
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 104, 18); -- 2148
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (2, 104, 23, 'Any'); -- 2149
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 104, 24); -- 2150
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (2, 104, 25, 'Warfare'); -- 2151
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (3, 104, 1); -- 2152
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (3, 104, 16); -- 2153
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (3, 104, 35); -- 2154
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (3, 104, 36, 'Horse'); -- 2155
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (4, 104, 23, 'Any'); -- 2156
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (4, 104, 25, 'Any'); -- 2157
+-- Shaman
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 105, 1); -- 2158
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 105, 6, 'Ghur'); -- 2159
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 105, 11); -- 2160
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 105, 12); -- 2161
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 105, 22); -- 2162
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 105, 23, 'Magick'); -- 2163
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 105, 25, 'Magic'); -- 2164
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (1, 105, 26, 'Polearm'); -- 2165
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 105, 28); -- 2166
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (1, 105, 29); -- 2167
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (2, 105, 2, 'Any'); -- 2168
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 105, 8); -- 2169
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (2, 105, 25, 'Beasts'); -- 2170
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (2, 105, 34, 'Bow'); -- 2171
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (2, 105, 42, 'Rural'); -- 2172
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (2, 105, 44); -- 2173
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (3, 105, 27); -- 2174
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (3, 105, 35); -- 2175
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (3, 105, 36, 'Horse'); -- 2176
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (3, 105, 39, 'Amber Order'); -- 2177
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID, SkillGroup) VALUES (4, 105, 25, 'Any'); -- 2178
+INSERT INTO CareerSkills (CareerLevel, CareerID, SkillID) VALUES (4, 105, 24); -- 2179
 
 
 
@@ -3091,6 +3368,18 @@ INSERT INTO CareerTradeSkill (CareerSkillsID) VALUES (1834); -- 90 -- Sailor-Pri
 INSERT INTO CareerTradeSkill (CareerSkillsID) VALUES (1857); -- 91 -- Ship’s Gunner
 INSERT INTO CareerTradeSkill (CareerSkillsID) VALUES (1876); -- 92 -- Wrecker
 INSERT INTO CareerTradeSkill (CareerSkillsID) VALUES (1899); -- 93 -- Priest of Stromfels
+INSERT INTO CareerTradeSkill (CareerSkillsID) VALUES (1923); -- 94 -- Beadle
+INSERT INTO CareerTradeSkill (CareerSkillsID) VALUES (1946); -- 95 -- Mundane Alchemist
+INSERT INTO CareerTradeSkill (CareerSkillsID) VALUES (1969); -- 96 -- Magister Vigilant
+INSERT INTO CareerTradeSkill (CareerSkillsID) VALUES (1988); -- 97 -- Scryer
+INSERT INTO CareerTradeSkill (CareerSkillsID) VALUES (2008); -- 98 -- Hierophant
+INSERT INTO CareerTradeSkill (CareerSkillsID) VALUES (2030); -- 99 -- Alchemist
+INSERT INTO CareerTradeSkill (CareerSkillsID) VALUES (2052); -- 100 -- Druid
+INSERT INTO CareerTradeSkill (CareerSkillsID) VALUES (2075); -- 101 -- Astromancer
+INSERT INTO CareerTradeSkill (CareerSkillsID) VALUES (2093); -- 102 -- Shadowmancer
+INSERT INTO CareerTradeSkill (CareerSkillsID) VALUES (2119); -- 103 -- Spiriter
+INSERT INTO CareerTradeSkill (CareerSkillsID) VALUES (2141); -- 104 -- Pyromancer
+INSERT INTO CareerTradeSkill (CareerSkillsID) VALUES (2163); -- 105 -- Shaman
 
 
 -- Talents
