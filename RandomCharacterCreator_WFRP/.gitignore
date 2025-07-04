@@ -30,3 +30,6 @@ rust-toolchain.toml
 
 # Arquivos de ambiente
 .env
+
+# Arquivos sql
+*.sql
